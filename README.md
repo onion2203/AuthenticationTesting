@@ -1,7 +1,7 @@
 # Authentication Testing (Broken Authentication) - Top 10 OWASP 2017
 
 ## 1. Bypassing Authentication Schema
-Trong lổ hổng *Broken Authentication*, thì Bypassing Authentication Scheme là một nhánh nhỏ của lổ hổng này. Có thể biết rằng các phần mềm hoặc ứng dụng thường yêu cầu xác thực để có thể truy cập vào, ví dụ: email, username, password, …Và Bypassing Authentication (Bypass Authen) là phần rất dễ bị tấn công. Nó cho phép hacker bỏ qua các bước xác thực và giành quyền truy cập vào ứng dụng và dữ liệu. Từ đó có thể thực hiện các hành động nguy hiểm khác như cài back-door, đánh cắp thông tin, can thiệp tiến trình của ứng dụng…
+Trong lỗ hổng *Broken Authentication*, thì Bypassing Authentication Scheme là một nhánh nhỏ của lỗ hổng này. Có thể biết rằng các phần mềm hoặc ứng dụng thường yêu cầu xác thực để có thể truy cập vào, ví dụ: email, username, password, …Và Bypassing Authentication (Bypass Authen) là phần rất dễ bị tấn công. Nó cho phép attacker bỏ qua các bước xác thực và giành quyền truy cập vào ứng dụng và dữ liệu. Từ đó có thể thực hiện các hành động nguy hiểm khác như cài back-door, đánh cắp thông tin, can thiệp tiến trình của ứng dụng…
 
 ---
 ## 2. Detect and Exploit
@@ -45,7 +45,7 @@ Trong lổ hổng *Broken Authentication*, thì Bypassing Authentication Scheme 
   - **Xác nhận đầu vào**: kiểm tra xem đầu vào có chứa các ký tự đặc biệt như %00 (**URL encode**), hoặc ký tự mã hóa nào đó có thể bypass công cụ kiểm tra đầu vào.
 
 ### 2.2 Làm sao để khai thác?
-- **Khai thác các lỗ hổng**: là quá trình mà attacker tìm kiếm, xác định và tận dụng các lỗ hổng bảo mật trong các ứng dụng hoặc hệ thống để đánh cắp hoặc phá hủy dữ liệu, chẳng hạn như **SQL injection** hoặc **Cross-Site Scripting** (XSS).
+- **Khai thác các lỗ hổng**: là quá trình mà attacker tìm kiếm, xác định và tận dụng các lỗ hổng bảo mật trong các ứng dụng hoặc hệ thống, chẳng hạn như **SQL injection** hoặc **Cross-Site Scripting** (XSS).
     
     Link Test: **[LINK](https://dvwa.fptufia.me/)**
     
@@ -63,7 +63,7 @@ Trong lổ hổng *Broken Authentication*, thì Bypassing Authentication Scheme 
        
 - **File Path Traversal**: là một kỹ thuật cho phép attacker truy cập vào các tập tin hoặc thư mục trên web server bằng cách sử dụng các ký tự đặc biệt để đánh lừa hệ thống. 
     
-    Test lab ở đây: **[LINK](https://portswigger.net/web-security/file-path-traversal).**
+    Link Test: **[LINK](https://portswigger.net/web-security/file-path-traversal).**
     ![Untitled](.image/Untitled%203.png)
     
     ![Untitled](.image/Untitled%204.png)
@@ -71,7 +71,7 @@ Trong lổ hổng *Broken Authentication*, thì Bypassing Authentication Scheme 
 
 - **Thao tác với Cookies**: là kỹ thuật tấn công mà attacker sửa đổi các giá trị của cookie từ đó có thể bypass các biện pháp bảo mật như xác thực và phân quyền.
     
-    Link Challange: **[LINK](https://www.root-me.org/en/Challenges/Web-Server/HTTP-Cookies)**
+    Link Test: **[LINK](https://www.root-me.org/en/Challenges/Web-Server/HTTP-Cookies)**
     
     ![Untitled](.image/Untitled%205.png)
     
