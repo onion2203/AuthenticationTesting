@@ -78,7 +78,7 @@ Trong lổ hổng *Broken Authentication*, thì Bypassing Authentication Scheme 
     ![Untitled](.image/Untitled%206.png)
     ```=> Có thể thấy chỉ cần thay đổi một giá trị của cookies thì attacker đã có thể đánh lừa được web server và truy cập vào tài quyên của hệ thống đang được bảo vệ.```
 ---
-## 3. Affect
+## 3. Ảnh hưởng gây ra bởi lỗ hổng này
 Từ những điều trên ta có thể thấy được sự ảnh hưởng của Bypassing Authentication Schema
 - Đánh cắp thông tin cá nhân
 - Phá hoại dữ liệu hoặc cơ sở dữ liệu
