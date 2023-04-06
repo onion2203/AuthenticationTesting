@@ -45,25 +45,21 @@ Trong lổ hổng *Broken Authentication*, thì Bypassing Authentication Scheme 
   - **Xác nhận đầu vào**: kiểm tra xem đầu vào có chứa các ký tự đặc biệt như %00 (**URL encode**), hoặc ký tự mã hóa nào đó có thể bypass công cụ kiểm tra đầu vào.
 
 ### 2.2 Làm sao để khai thác?
-- Khai thác các lỗ hổng: là quá trình mà attacker tìm kiếm, xác định và tận dụng các lỗ hổng bảo mật trong các ứng dụng hoặc hệ thống để đánh cắp hoặc phá hủy dữ liệu, chẳng hạn như **SQL injection** hoặc **Cross-Site Scripting** (XSS).
+- **Khai thác các lỗ hổng**: là quá trình mà attacker tìm kiếm, xác định và tận dụng các lỗ hổng bảo mật trong các ứng dụng hoặc hệ thống để đánh cắp hoặc phá hủy dữ liệu, chẳng hạn như **SQL injection** hoặc **Cross-Site Scripting** (XSS).
     
     Link Test: **[LINK](https://dvwa.fptufia.me/)**
     
     * **Ví dụ về lỗ hổng SQLi**
     
     ![Untitled](.image/Untitled.png)
-    ```
-    => Có thể thấy chỉ cần một thực hiện một số thao tác là ta có thể truy vấn được dữ liệu từ database.
-    ```
+    ```=> Có thể thấy chỉ cần một thực hiện một số thao tác là ta có thể truy vấn được dữ liệu từ database.```
 
     * **Ví dụ về lỗ hổng XSS**
     
     ![Untitled](.image/Untitled%201.png)
     
     ![Untitled](.image/Untitled%202.png)
-    ```
-    => Sau khi xác định được trang web có lổ hổng XSS thì attacker có thể tấn công  bằng cách chèn mã độc vào các trang web được yêu cầu bởi user để đánh cắp thông tin đăng nhập hoặc thực hiện các hành động khác.
-    ```
+    ```=> Sau khi xác định được trang web có lổ hổng XSS thì attacker có thể tấn công  bằng cách chèn mã độc vào các trang web được yêu cầu bởi user để đánh cắp thông tin đăng nhập hoặc thực hiện các hành động khác.```
        
 - **File Path Traversal**: là một kỹ thuật cho phép attacker truy cập vào các tập tin hoặc thư mục trên web server bằng cách sử dụng các ký tự đặc biệt để đánh lừa hệ thống. 
     
@@ -71,9 +67,7 @@ Trong lổ hổng *Broken Authentication*, thì Bypassing Authentication Scheme 
     ![Untitled](.image/Untitled%203.png)
     
     ![Untitled](.image/Untitled%204.png)
-    ```
-    => Lợi dụng lỗi hổng này attacker có thể đọc được các file config của web server - nơi có thể chứa thông tin kết nối với database, hoặc có thể biết được tài khoản user từ các file "/etc/passwd", "/etc/shadow" 
-    ```
+    ```=> Lợi dụng lỗi hổng này attacker có thể đọc được các file config của web server - nơi có thể chứa thông tin kết nối với database, hoặc có thể biết được tài khoản user từ các file "/etc/passwd", "/etc/shadow".```
 
 - **Thao tác với Cookies**: là kỹ thuật tấn công mà attacker sửa đổi các giá trị của cookie từ đó có thể bypass các biện pháp bảo mật như xác thực và phân quyền.
     
@@ -82,9 +76,7 @@ Trong lổ hổng *Broken Authentication*, thì Bypassing Authentication Scheme 
     ![Untitled](.image/Untitled%205.png)
     
     ![Untitled](.image/Untitled%206.png)
-    ```
-    => Có thể thấy chỉ cần thay đổi một giá trị của cookies thì attacker đã có thể đánh lừa được web server và truy cập vào tài quyên của hệ thống đang được bảo vệ.
-    ```
+    ```=> Có thể thấy chỉ cần thay đổi một giá trị của cookies thì attacker đã có thể đánh lừa được web server và truy cập vào tài quyên của hệ thống đang được bảo vệ.```
 ---
 ## 3. Affect
 Từ những điều trên ta có thể thấy được sự ảnh hưởng của Bypassing Authentication Schema
